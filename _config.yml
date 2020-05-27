@@ -7,7 +7,7 @@ title: 喵帕斯的博客
 subtitle:
 description:
 keywords: 喵帕斯,博客
-author: Pony_Join
+author: 喵帕斯
 language: zh_CN
 timezone:
 
@@ -84,14 +84,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yelee
+theme: indigo
 
 # Deployment
 ## 这里是重点，这里是修改发布地址，因为我们前面已经加了 SSH 密钥信息在 Github 设置里面了，所以只要我们电脑里面持有那两个密钥文件就可以无需密码地跟 Github 做同步。
 ## 需要注意的是这里的 repo 采用的是 ssh 的地址，而不是 https 的。分支我们默认采用 master 分支，以后你翅膀硬了要换其他也无所谓。
 ## Docs: https://hexo.io/docs/deployment.html
+# github: git@github.com:chenjh0611/chenjh0611.github.io.git,master
+# coding: git@git.coding.net:chenjh0719/chenjh0719.git,master
 deploy:
   type: git
   repo: 
-    github: git@github.com:moefuru/moefuru.github.io.git,master
-    coding: git@git.coding.net:moefuru/moefuru.git,master
+    github: git@github.com:Moefuru/moefuru.github.io.git
+    branch: master
