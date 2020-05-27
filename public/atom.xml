@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>喵帕斯的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.awuawu.vip/"/>
+  <updated>2019-10-28T09:20:40.994Z</updated>
+  <id>http://blog.awuawu.vip/</id>
+  
+  <author>
+    <name>喵帕斯</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CRLF和LF 导致的问题</title>
+    <link href="http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/"/>
+    <id>http://blog.awuawu.vip/2019/10/28/CF和LF/</id>
+    <published>2019-10-28T08:58:05.209Z</published>
+    <updated>2019-10-28T09:20:40.994Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="首先CF-LF是什么"><a href="#首先CF-LF是什么" class="headerlink" title="首先CF LF是什么?"></a>首先CF LF是什么?</h3><p>CR：Carriage Return  即“回车”<br>LF：Line Feed 即“换行” </p><h3 id="导致的问题"><a href="#导致的问题" class="headerlink" title="导致的问题"></a>导致的问题</h3><p>有时候执行php脚本会出现这个问题#/usr/local/php/bin/php^M<br>uinx的文件在windows打开变成一行（目前win10没有发现这个问题）</p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>主要是由windows与linux的换行符不一致导致的<br>linux的换行符为 LF \n windows的换行符为 CRLF \r\n</p><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>使用编辑器切换换行符为LF保存文件即可解决</p><p>具体参考: <a href="https://www.jianshu.com/p/ec9564fe1c2b" target="_blank" rel="noopener">https://www.jianshu.com/p/ec9564fe1c2b</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;首先CF-LF是什么&quot;&gt;&lt;a href=&quot;#首先CF-LF是什么&quot; class=&quot;headerlink&quot; title=&quot;首先CF LF是什么?&quot;&gt;&lt;/a&gt;首先CF LF是什么?&lt;/h3&gt;&lt;p&gt;CR：Carriage Return  即“回车”&lt;br&gt;LF：Line
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.awuawu.vip/2019/10/24/hello-world/"/>
+    <id>http://blog.awuawu.vip/2019/10/24/hello-world/</id>
+    <published>2019-10-24T09:35:17.594Z</published>
+    <updated>2019-10-24T09:35:17.594Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
